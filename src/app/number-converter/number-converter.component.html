@@ -1,0 +1,9 @@
+<div>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput" [(ngModel)]="inputNumber" />
+    <button (click)="convertNumber()">Convert</button>
+  </div>
+  <div *ngIf="convertedText !== undefined">
+    <p>Converted Text: {{ convertedText }}</p>
+</div>
+  
